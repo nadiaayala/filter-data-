@@ -19,6 +19,9 @@ $(function () {
     ]
 
     $('#btn').on('click', function () {
+        // The following two lines check if there is a table in the DOM in order to delete it everytime the search button is clicked on
+        var $tables = $('table');
+        $tables.remove();
         var $minVal = $('#min').val();
         var $maxVal = $('#max').val();
         var results = [];
