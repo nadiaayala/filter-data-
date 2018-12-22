@@ -19,11 +19,12 @@ $(function () {
     ]
 
     $('#btn').on('click', function () {
-        // The following two lines check if there is a table in the DOM in order to delete it everytime the search button is clicked on
-        var $tables = $('table');
-        $tables.remove();
         var $minVal = $('#min').val();
         var $maxVal = $('#max').val();
+        if($minVal != '' && $maxVal != ''){
+        // The following two lines check if there is a table in the DOM in order to delete it everytime the search button is clicked on
+        var $tables = $('table');
+        $tables.remove(); 
         var results = [];
         people.forEach(function (person) {
             if (person.rate >= $minVal && person.rate <= $maxVal) {
@@ -57,5 +58,6 @@ $(function () {
         $($tableFull).append($tableHead);
         $($tableFull).append($table);
         $('body').append($tableFull);
-    })
+    }
+})
 })
