@@ -18,9 +18,20 @@ $(function () {
         }
     ]
 
+    var $minRate = $('#minRate');
+    var $minRateVal = $('#minRateVal');
+    var $maxRate = $('#maxRate');
+    var $maxRateVal = $('#maxRateVal');
+    $minRate.on('input', function(){
+        $minRateVal.html(this.value);
+    });  
+    $maxRate.on('input', function(){
+        $maxRateVal.html(this.value);
+    })
+
     $('#btn').on('click', function () {
-        var $minVal = $('#min').val();
-        var $maxVal = $('#max').val();
+        var $minVal = $('#minRate').val();
+        var $maxVal = $('#maxRate').val();
         if($minVal != '' && $maxVal != ''){
         // The following two lines check if there is a table in the DOM in order to delete it everytime the search button is clicked on
         var $tables = $('table');

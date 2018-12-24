@@ -13,7 +13,8 @@ td{
 #first{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    width: 80vw;
+    border: solid rgb(70, 113, 194) 2px;
 }
 #first input{
     width: 50px;
