@@ -2,19 +2,23 @@ $(function () {
     var people = [
         {
             name: 'Ana',
-            rate: '70'
+            rate: '70',
+            img: ''
         },
         {
             name: 'John',
-            rate: '65'
+            rate: '65',
+            img: ''
         },
         {
             name: 'Mark',
-            rate: '120'
+            rate: '120',
+            img: ''
         },
         {
             name: 'Lisa',
-            rate: '85'
+            rate: '85',
+            img: ''
         }
     ]
 
