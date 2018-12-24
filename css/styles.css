@@ -13,12 +13,13 @@ td{
 #first{
     display: flex;
     flex-direction: row;
-    width: 80vw;
+    justify-content: center;
+    width: 40vw;
     border: solid rgb(70, 113, 194) 2px;
 }
 #first input{
-    width: 50px;
-    height: 30px;
+    
+    height: 20px;
 }
 #first button{
     width: 80px;
@@ -30,4 +31,10 @@ td{
 #first button:hover{
     cursor: pointer;
 }
+#divBtn{
+    width: 40vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
